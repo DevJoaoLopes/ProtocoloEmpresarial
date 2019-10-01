@@ -25,7 +25,7 @@ public class Referencia {
         this.nome = nome;
     }
 
-    public void setTipo(String tipo) {
+    public void setTipo(String tipo) { 
         this.tipo = tipo; 
     }
 }
