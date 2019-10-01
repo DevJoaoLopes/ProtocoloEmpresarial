@@ -26,6 +26,6 @@ public class Referencia {
     }
 
     public void setTipo(String tipo) {
-        this.tipo = tipo;
+        this.tipo = tipo; 
     }
 }
