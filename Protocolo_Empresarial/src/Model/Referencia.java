@@ -7,7 +7,7 @@ package Model;
 
 /**
  *
- * @author piga
+ * @author Reinaldo
  */
 public class Referencia {
     private String nome;
