@@ -18,6 +18,7 @@ import org.jdesktop.observablecollections.ObservableCollections;
 import org.jdesktop.swingbinding.JTableBinding;
 import org.jdesktop.swingbinding.JTableBinding.ColumnBinding;
 import org.jdesktop.swingbinding.SwingBindings;
+import Controller.ControllerUsuario;
 /**
  *
  * @author reinaldo.nti
@@ -235,11 +236,10 @@ public class CadastroUsuario extends javax.swing.JFrame {
     }//GEN-LAST:event_btExcluirActionPerformed
 
     private void btAdicionarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btAdicionarActionPerformed
-
+      
         Usuario r = new Usuario();
         if(tbUsuarios.getSelectedRows().length==0){
             r.setNome(txtNome.getText());
-            //r.setTipo(txtEmail.getText());
             r.setEmail(txtEmail.getText());
             r.setRg(txtRg.getText());
             r.setCpf(txtCpf.getText());
@@ -290,6 +290,7 @@ public class CadastroUsuario extends javax.swing.JFrame {
                 new CadastroUsuario().setVisible(true);
             }
         });
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
