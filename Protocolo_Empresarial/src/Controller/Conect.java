@@ -24,10 +24,10 @@ public class Conect {
         // Configurando a nossa conexão com um banco de dados//
  
         
-        String serverName = "172.17.0.1";    //caminho do servidor do BD
+        String serverName = "";    //caminho do servidor do BD
         String mydatabase ="trabalho";        //nome do seu banco de dados
         String url = "jdbc:mysql://" + serverName + "/" + mydatabase;
-        String username = "root";        //nome de um usuário de seu BD      
+        String username = "";        //nome de um usuário de seu BD      
         String password = "mysql";      //sua senha de acesso
         connection = DriverManager.getConnection(url, username, password);
         //Testa sua conexão
@@ -40,21 +40,12 @@ public class Conect {
         
         } catch (ClassNotFoundException e) {  //Driver não encontrado
             System.out.println("O driver expecificado nao foi encontrado.");
- 
             return null;
- 
         } catch (SQLException e) {
- 
-//Não conseguindo se conectar ao banco
- 
-            System.out.println("Nao foi possivel conectar ao Banco de Dados.");
- 
+            System.out.println("Nao foi possivel conectar ao Banco de Dados." +e);
             return null;
- 
         }
- 
     }
-    
     public static String statusConection() {
         return status;
     }
