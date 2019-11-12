@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package View;
 
 import Model.Usuario;
@@ -248,6 +243,8 @@ public class CadastroUsuario extends javax.swing.JFrame {
             txtEmail.setText("");
             txtRg.setText("");
             txtCpf.setText("");
+            ControllerUsuario c = new ControllerUsuario();
+            c.insertUsuario(r);
         }else{
             lstUsuarios.add(r);
             tbUsuarios.getSelectionModel().setSelectionInterval(
