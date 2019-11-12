@@ -13,7 +13,7 @@ import org.jdesktop.observablecollections.ObservableCollections;
 import org.jdesktop.swingbinding.JTableBinding;
 import org.jdesktop.swingbinding.JTableBinding.ColumnBinding;
 import org.jdesktop.swingbinding.SwingBindings;
-import Controller.ControllerUsuario;
+import Controller.UsuarioDAO;
 /**
  *
  * @author reinaldo.nti
@@ -243,7 +243,7 @@ public class CadastroUsuario extends javax.swing.JFrame {
             txtEmail.setText("");
             txtRg.setText("");
             txtCpf.setText("");
-            ControllerUsuario c = new ControllerUsuario();
+            UsuarioDAO c = new UsuarioDAO();
             c.insertUsuario(r);
         }else{
             lstUsuarios.add(r);

@@ -17,7 +17,7 @@ public class Conect {
             String driverName = "com.mysql.cj.jdbc.Driver";                        
             Class.forName(driverName);  
             String serverName = "localhost"; 
-            String mydatabase ="";       
+            String mydatabase ="teste";       
             String url = "jdbc:mysql://" + serverName + "/" + mydatabase+"?useTimezone=true&serverTimezone=UTC";
             String username = "root";    
             String password = ""; 
